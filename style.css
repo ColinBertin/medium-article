@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  color: #494949;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.banner {
+  background-image: url(https://source.unsplash.com/random/1000x500);
+  background-size: cover;
+  padding: 140px 0;
+  color: #FFF;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 300;
+  color: #A0A0A0;
+}
+
+.banner p {
+  font-size: 32px;
+  font-style: italic;
+  color: #D5D5D6;
+}
+
+.container-margin {
+  margin-top: 40px;
+}
+
+a {
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: none;
+  color: #636363;
+  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
+  /*background-color: #e9fdf0;*/
+}
+
+a:hover {
+  background-image: linear-gradient(to bottom, rgba(125, 255, 179, 1), rgba(125, 255, 179, 1));
+}
+
+@media (max-width: 900px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 750px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 450px;
+  }
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .banner p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 350px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+}
